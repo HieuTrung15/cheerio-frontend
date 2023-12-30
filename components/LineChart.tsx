@@ -7,7 +7,7 @@ Chart.register(...registerables, zoomPlugin);
 const options: any = {
     scales: {
       y: {
-        min: -1,
+        min: -5,
         max: 100,
         type: "linear",
       }
@@ -32,7 +32,7 @@ const options: any = {
   };
 
 const LineChart = ({chartData}: any) => {
-    return <Line data={chartData} options={options}/>
+    return <Line data={chartData} options={options} />
 }
 
 export default LineChart;
